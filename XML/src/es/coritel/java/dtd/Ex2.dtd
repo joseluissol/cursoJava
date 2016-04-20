@@ -1,0 +1,12 @@
+<!ENTITY empresa "Empresa">
+<!ELEMENT almacen (productos)>
+<!ATTLIST almacen empresa CDATA #REQUIRED>
+<!ELEMENT productos (producto+)>
+<!ATTLIST producto id ID #REQUIRED
+					nohay CDATA #IMPLIED>
+<!ELEMENT producto (nombre, precio, caracteristicas?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST precio valor CDATA #REQUIRED
+				moneda CDATA #REQUIRED>
+<!ELEMENT precio EMPTY>
+<!ELEMENT caracteristicas (#PCDATA)>

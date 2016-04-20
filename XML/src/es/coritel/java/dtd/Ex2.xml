@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE almacen SYSTEM "Ex2.dtd">
+<almacen empresa="&empresa;">
+   <productos>
+      <producto id="A191">
+         <nombre>Teclado</nombre>
+         <precio valor="20" moneda="euros"/>
+         <caracteristicas>15 pulgadas</caracteristicas>
+      </producto>
+      <producto id="A167">
+         <nombre>Monitor 14'</nombre>
+         <precio valor="20000" moneda="pesetas"/>
+      </producto>
+      <producto id="A180" nohay="A167">
+         <nombre>Monitor 15'</nombre>
+         <precio valor="20000" moneda="pesetas"/>
+      </producto>
+   </productos>
+</almacen>

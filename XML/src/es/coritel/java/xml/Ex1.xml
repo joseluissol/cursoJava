@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enterprise>
+	<employees>
+		<employee firstname="James" lastname="Smith" lastname2="Lang">
+			<address street="Mayor" />
+		</employee>
+		<employee>
+			<address street="Mayor" />
+		</employee>
+		<employee>
+			<city>Paris</city>
+		</employee>
+	</employees>
+	<offices>
+		<office phone1="111111111" phone2="1111122333">
+			<city>Barcelona</city>
+		</office>
+		<office>
+			<city phone_number="1234556">Madrid</city>
+		</office>
+	</offices>
+</enterprise>
