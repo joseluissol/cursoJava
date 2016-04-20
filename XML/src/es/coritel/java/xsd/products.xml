@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="products.xsd">
+	<product id="A191">
+		<origin>Madrid</origin>
+		<precio>100</precio>
+	</product>
+	<product id="A167">
+		<origin>Paris</origin>
+		<precio>150</precio>
+	</product>
+	<product id="A180">
+		<origin>Tokyo</origin>
+		<price>200</price>
+	</product>
+</products>

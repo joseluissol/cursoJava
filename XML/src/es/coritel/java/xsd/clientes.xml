@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="clientes.xsd">
+	<cliente id="81422" dni="11111111" localidad="Madrid">
+		<nombre>Antonio</nombre>
+		<direcciones>
+			<direccion>
+				<ciudad>Málaga</ciudad>
+				<calle>Larios</calle>
+				<numero>5</numero>
+			</direccion>
+			<direccion>
+				<ciudad>Madrid</ciudad>
+				<calle>Alcalá</calle>
+				<numero>120</numero>
+			</direccion>
+		</direcciones>
+	</cliente>
+	<cliente id="81555" dni="22222222" sexo="Hombre">
+		<nombre>Jose Carlos</nombre>
+		<apellido1>Martínez</apellido1>
+	</cliente>
+	<cliente id="81888" dni="33333333" sexo="Mujer">
+		<nombre>Josefa</nombre>
+		<apellido1>Martín</apellido1>
+		<apellido2>Fernández</apellido2>
+	</cliente>
+</clientes>
