@@ -6,13 +6,18 @@
 				<xs:element name="cliente" maxOccurs="unbounded">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element name="nombre" type="xs:string" />
-							<xs:element name="apellido1" type="xs:string" minOccurs="0" maxOccurs="1"/>
-							<xs:element name="apellido2" type="xs:string" minOccurs="0" maxOccurs="1"/>
-							<xs:element name="direcciones" minOccurs="0" maxOccurs="1">
+							<xs:element name="nombre" type="xs:string"
+							 maxOccurs="1" minOccurs="1"/>
+							<xs:element name="apellido1" type="xs:string"
+								minOccurs="0" maxOccurs="1" />
+							<xs:element name="apellido2" type="xs:string"
+								minOccurs="0" maxOccurs="1" />
+							<xs:element name="direcciones" minOccurs="0"
+								maxOccurs="1">
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="direccion" minOccurs="0" maxOccurs="unbounded">
+										<xs:element name="direccion" minOccurs="0"
+											maxOccurs="unbounded">
 											<xs:complexType>
 												<xs:sequence>
 													<xs:element name="ciudad" type="xs:string" />
@@ -25,10 +30,29 @@
 								</xs:complexType>
 							</xs:element>
 						</xs:sequence>
-						<xs:attribute name="id" type="xs:int" />
-						<xs:attribute name="dni" type="xs:int" />
-						<xs:attribute name="sexo" type="xs:string" />
-						<xs:attribute name="localidad" type="xs:string" />
+						<xs:attribute name="id" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:int">
+									<xs:totalDigits value="5"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="dni" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:maxLength value="8" />
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="sexo" use="optional">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="Mujer"/>
+									<xs:enumeration value="Hombre"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="localidad" type="xs:string" use="optional"/>
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>
